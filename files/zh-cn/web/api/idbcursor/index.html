@@ -35,7 +35,7 @@ translation_of: Web/API/IDBCursor
  <dt>{{domxref("IDBCursor.direction")}} {{readonlyInline}}</dt>
  <dd>返回光标遍历方向。请查看<a href="#const_next"> 常数</a> 中可能的值。</dd>
  <dt>{{domxref("IDBCursor.key")}} {{readonlyInline}}</dt>
- <dd>返回记录中游标位置的有效主键。如果游标在区间之外，将会设置成 <code>undefined</code>。游标主键可以是任意的时间类型（data type）。</dd>
+ <dd>返回记录中游标位置的有效主键。如果游标在区间之外，将会设置成 <code>undefined</code>。游标主键可以是任意的数据类型（data type）。</dd>
  <dt>{{domxref("IDBCursor.primaryKey")}} {{readonlyInline}}</dt>
  <dd>返回游标当前有效的主键。如果游标当前正在被迭代或者已经在迭代在区间范围外，将会被设置成 <code>undefined</code> 。 游标主键可以是任意的时间类型（data type）。</dd>
 </dl>
@@ -96,57 +96,7 @@ translation_of: Web/API/IDBCursor
 
 <h2 id="Browser_compatibility" name="Browser_compatibility">Browser compatibility</h2>
 
-<div>{{CompatibilityTable}}</div>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Chrome</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari (WebKit)</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>23{{property_prefix("webkit")}}<br>
-    24</td>
-   <td>10 {{property_prefix("moz")}}<br>
-    {{CompatGeckoDesktop("16.0")}}</td>
-   <td>10, partial</td>
-   <td>15</td>
-   <td>7.1</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Android</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>Firefox OS</th>
-   <th>IE Phone</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>4.4</td>
-   <td>{{CompatGeckoMobile("22.0")}}</td>
-   <td>1.0.1</td>
-   <td>10</td>
-   <td>22</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
+{{Compat("api.IDBCursor")}}
 
 <h2 id="See_also">See also</h2>
 

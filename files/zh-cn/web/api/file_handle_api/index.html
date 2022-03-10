@@ -212,7 +212,7 @@ writing.onerror = function () {
 
 <h3 id="Why_a_different_API_than_FileWriter">Why a different API than FileWriter?</h3>
 
-<p>The <a href="http://dev.w3.org/2009/dap/file-system/file-writer.html" title="http://dev.w3.org/2009/dap/file-system/file-writer.html">FileWriter specification</a> defines FileWriters, objects aiming at representing editable files. <a href="http://lists.w3.org/Archives/Public/public-webapps/2012JanMar/0886.html" title="http://lists.w3.org/Archives/Public/public-webapps/2012JanMar/0886.html">Discussions on public-webapps</a> led to the conclusion that the API would behave poorly in the case of different entities writing concurrently to the same file. The outcome of this discussion is the FileHandle API with its LockedFile and transaction mechanism.</p>
+<p>The <a href="http://dev.w3.org/2009/dap/file-system/file-writer.html" title="http://dev.w3.org/2009/dap/file-system/file-writer.html">FileWriter specification</a> defines FileWriters, objects aiming at representing editable files. <a href="http://lists.w3.org/Archives/Public/public-webapps/2012JanMar/0886.html">Discussions on public-webapps</a> led to the conclusion that the API would behave poorly in the case of different entities writing concurrently to the same file. The outcome of this discussion is the FileHandle API with its LockedFile and transaction mechanism.</p>
 
 <h2 id="Specifications">Specifications</h2>
 
@@ -233,52 +233,4 @@ writing.onerror = function () {
  </tbody>
 </table>
 
-<h2 id="Browser_compatibility">Browser compatibility</h2>
 
-<div>{{CompatibilityTable}}</div>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Chrome</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatNo}}</td>
-   <td>15</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Android</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>IE Mobile</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatNo}}</td>
-   <td>15</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>

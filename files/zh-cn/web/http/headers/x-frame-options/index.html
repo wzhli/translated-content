@@ -11,7 +11,7 @@ original_slug: Web/HTTP/X-Frame-Options
 ---
 <div>{{HTTPSidebar}}</div>
 
-<p>The <strong><code>X-Frame-Options</code></strong> <a href="/en-US/docs/Web/HTTP">HTTP</a> 响应头是用来给浏览器 指示允许一个页面 可否在 {{HTMLElement("frame")}}, {{HTMLElement("iframe")}}, {{HTMLElement("embed")}} 或者 {{HTMLElement("object")}} 中展现的标记。站点可以通过确保网站没有被嵌入到别人的站点里面，从而避免 {{interwiki("wikipedia", "clickjacking")}} 攻击。</p>
+<p>The <strong><code>X-Frame-Options</code></strong> <a href="/en-US/docs/Web/HTTP">HTTP</a> 响应头是用来给浏览器 指示允许一个页面 可否在 {{HTMLElement("frame")}}, {{HTMLElement("iframe")}}, {{HTMLElement("embed")}} 或者 {{HTMLElement("object")}} 中展现的标记。站点可以通过确保网站没有被嵌入到别人的站点里面，从而避免 {{interwiki("wikipedia", "点击劫持")}} 攻击。</p>
 
 <p>The added security is only provided if the user accessing the document is using a browser supporting <code>X-Frame-Options</code>. {{HTTPHeader("Content-Security-Policy")}} HTTP 头中的 <a href="/en-US/docs/Security/CSP/CSP_policy_directives#frame-ancestors">frame-ancestors</a> 指令会<a href="https://www.w3.org/TR/CSP2/#frame-ancestors-and-frame-options">替代</a>这个非标准的 header。CSP 的 frame-ancestors 会在 {{Gecko("4.0")}} 中支持，但是并不会被所有浏览器支持。然而 <code>X-Frame-Options</code> 是个已广泛支持的非官方标准，可以和 CSP 结合使用。</p>
 
@@ -147,8 +147,6 @@ app.use(frameguard({ action: 'sameorigin' }))
 
 <h2 id="浏览器兼容性">浏览器兼容性</h2>
 
-<p class="hidden">The compatibility table in this page is generated from structured data. If you'd like to contribute to the data, please check out <a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data</a> and send us a pull request.</p>
-
 <p>{{Compat("http.headers.X-Frame-Options")}}</p>
 
 <h2 id="参见">参见</h2>
@@ -156,7 +154,7 @@ app.use(frameguard({ action: 'sameorigin' }))
 <ul>
  <li><a href="/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors"><code>frame-ancestors</code> (CSP)</a></li>
  <li><a href="https://tools.ietf.org/html/rfc7034">HTTP Header Field X-Frame-Options - RFC 7034</a></li>
- <li><a class="external" href="http://blogs.msdn.com/b/ie/archive/2009/01/27/ie8-security-part-vii-clickjacking-defenses.aspx" title="http://blogs.msdn.com/b/ie/archive/2009/01/27/ie8-security-part-vii-clickjacking-defenses.aspx">ClickJacking Defenses - IEBlog</a></li>
- <li><a href="http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx" title="http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx">Combating ClickJacking with X-Frame-Options - IEInternals</a></li>
- <li><a href="https://w3c.github.io/webappsec/specs/content-security-policy/#directive-frame-ancestors" title="https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html#frame-src">CSP Level 2 frame-ancestors directive</a></li>
+ <li><a class="external" href="http://blogs.msdn.com/b/ie/archive/2009/01/27/ie8-security-part-vii-clickjacking-defenses.aspx">ClickJacking Defenses - IEBlog</a></li>
+ <li><a href="http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx">Combating ClickJacking with X-Frame-Options - IEInternals</a></li>
+ <li><a href="https://w3c.github.io/webappsec/specs/content-security-policy/#directive-frame-ancestors">CSP Level 2 frame-ancestors directive</a></li>
 </ul>

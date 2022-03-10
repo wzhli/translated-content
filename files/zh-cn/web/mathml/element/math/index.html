@@ -115,7 +115,7 @@ translation_of: Web/MathML/Element/math
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p><strong>注意：</strong> XHTML 文档如果带有MathML，必须将文档的MIME类型设置为<code>application/xhtml+xml</code>进行发送。一般来说可以通过将扩展名改为<code>.xhtml</code> 来实现对本地文件的修改。对于Apache服务器，你可以<a class="external" href="http://httpd.apache.org/docs/2.2/mod/mod_mime.html#addtype" title="http://httpd.apache.org/docs/2.2/mod/mod_mime.html#addtype">配置<code>.htaccess</code>文件</a> 来达到映射扩展名为正确的MIME类型的目的。因为MathML被放在一个XML文件中，你必须编写一个严格符合XML格式的文档。</p>
+<p><strong>注意：</strong> XHTML 文档如果带有MathML，必须将文档的MIME类型设置为<code>application/xhtml+xml</code>进行发送。一般来说可以通过将扩展名改为<code>.xhtml</code> 来实现对本地文件的修改。对于Apache服务器，你可以<a class="external" href="http://httpd.apache.org/docs/2.2/mod/mod_mime.html#addtype">配置<code>.htaccess</code>文件</a> 来达到映射扩展名为正确的MIME类型的目的。因为MathML被放在一个XML文件中，你必须编写一个严格符合XML格式的文档。</p>
 
 <h2 id="规范">规范</h2>
 
@@ -143,163 +143,11 @@ translation_of: Web/MathML/Element/math
 
 <h2 id="浏览器兼容性">浏览器兼容性</h2>
 
-<p>{{CompatibilityTable}}</p>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Chrome</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari</th>
-  </tr>
-  <tr>
-   <td>XHTML标记</td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoDesktop("1.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>9.5</td>
-   <td>5.1</td>
-  </tr>
-  <tr>
-   <td>HTML5标记</td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoDesktop("2.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>5.1</td>
-  </tr>
-  <tr>
-   <td><code>dir</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoDesktop("12.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
-  <tr>
-   <td><code>href</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoDesktop("7.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}} [1]</td>
-  </tr>
-  <tr>
-   <td><code>mathbackground</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoDesktop("2.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>5.1</td>
-  </tr>
-  <tr>
-   <td><code>mathcolor</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoDesktop("2.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>5.1</td>
-  </tr>
-  <tr>
-   <td><code>overflow</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Android</th>
-   <th>Chrome for Android</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>IE Mobile</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>XHTML 标记</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoMobile("1.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
-  <tr>
-   <td>HTML5 标记</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoMobile("2.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
-  <tr>
-   <td><code>dir</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoMobile("12.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
-  <tr>
-   <td><code>href</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoMobile("7.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}} [1]</td>
-  </tr>
-  <tr>
-   <td><code>mathbackground</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoMobile("2.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
-  <tr>
-   <td><code>mathcolor</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{ CompatGeckoMobile("2.0") }}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
-  <tr>
-   <td><code>overflow</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<p>[1] See <a href="https://bugs.webkit.org/show_bug.cgi?id=85733">bug 85733</a>.</p>
+{{Compat("mathml.elements.math")}}
 
 <h2 id="Gecko-specific_注释">Gecko-specific 注释</h2>
 
-<p>Gecko 7.0 {{ geckoRelease("7.0") }} 添加了对所有MathML属性在顶级math元素上的支持。 (也就是说和添加一个{{ MathMLElement("mstyle") }}元素效果一样)。然而，<code>displaystyle</code> 属性直到Gecko 8.0 {{ geckoRelease("8.0") }} 才 <a class="link-https" href="https://bugzilla.mozilla.org/show_bug.cgi?id=669719" title="https://bugzilla.mozilla.org/show_bug.cgi?id=669719">被添加进实现</a>。</p>
+<p>Gecko 7.0 {{ geckoRelease("7.0") }} 添加了对所有MathML属性在顶级math元素上的支持。 (也就是说和添加一个{{ MathMLElement("mstyle") }}元素效果一样)。然而，<code>displaystyle</code> 属性直到Gecko 8.0 {{ geckoRelease("8.0") }} 才 <a class="link-https" href="https://bugzilla.mozilla.org/show_bug.cgi?id=669719">被添加进实现</a>。</p>
 
 <p>纯文本的fall-back (<code>alttext</code>) 或者指定替代图像的属性<code>altimg</code>, <code>altimg-width</code>, <code>altimg-height</code> 或 <code>altimg-valign</code> 目前都还没有在Gecko中实现。</p>
 

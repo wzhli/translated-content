@@ -21,7 +21,7 @@ translation_of: Web/API/Element/mouseenter_event
 <div style="text-align: center;"><img alt="mouseover.png" class="default internal" src="/@api/deki/files/5909/=mouseover.png"></div>
 一个单独的mouseover事件被发送到DOM树的最深层元素，然后它将层次结构向上冒泡，直到它被处理程序取消或到达根目录。</div>
 
-<p>对于深层次结构，发送的mouseenter事件数量可能非常大并且会导致严重的性能问题。在这种情况下，最好是监听鼠标悬停事件。（可使用chrome开发者工具选项卡中的Performance进行性能测试）</p>
+<p>对于深层次结构，发送的 *mouseover* 事件数量可能非常大并且会导致严重的性能问题。在这种情况下，最好是监听 *mouseenter* 事件。（可使用chrome开发者工具选项卡中的Performance进行性能测试）</p>
 
 <p>结合其对称事件, <code>mouseleave</code>, mouseenter DOM事件的行为方式与CSS  {{cssxref(':hover')}} 伪类非常相似。.</p>
 
@@ -220,88 +220,7 @@ translation_of: Web/API/Element/mouseenter_event
 
 <h2 id="Browser_compatibility">Browser compatibility</h2>
 
-<p>{{CompatibilityTable}}</p>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Chrome</th>
-   <th>Edge</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>30<sup>[1]</sup></td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>10<sup>[2]</sup></td>
-   <td>5.5</td>
-   <td>{{CompatVersionUnknown}}<br>
-    {{CompatNo}} 15.0<br>
-    17.0</td>
-   <td>7<sup>[3]</sup></td>
-  </tr>
-  <tr>
-   <td>On disabled form elements</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatGeckoDesktop("44.0")}}<sup>[4]</sup></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Android</th>
-   <th>Chrome for Android</th>
-   <th>Edge</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>IE Mobile</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
-  <tr>
-   <td>On disabled form elements</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<p>[1] Implemented in <a href="https://crbug.com/236215">bug 236215</a>.</p>
-
-<p>[2] Implemented in {{bug("432698")}}.</p>
-
-<p>[3] Safari 7 fires the event in many situations where it's not allowed to, making the whole event useless. See <a href="https://crbug.com/470258">bug 470258</a> for the description of the bug (it existed in old Chrome versions as well). Safari 8 has correct behavior</p>
-
-<p>[4] Implemented in {{bug("218093")}}.</p>
+{{Compat("api.Element.mouseenter_event")}}
 
 <h2 id="See_also">See also</h2>
 

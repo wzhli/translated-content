@@ -5,7 +5,7 @@ translation_of: Web/API/Window/getSelection
 ---
 <div>{{ ApiRef() }}</div>
 
-<div></div>
+
 
 <p><span style="line-height: 1.5;">返回一个 </span>{{domxref("Selection")}}<span style="line-height: 1.5;"> 对象，</span>表示用户选择的文本范围或光标的当前位置。</p>
 
@@ -48,11 +48,9 @@ translation_of: Web/API/Window/getSelection
 
 <p>值得注意的是，目前在Firefox, Edge (非 Chromium 版本) 及 Internet Explorer 中，<code>getSelection()</code> 对 {{htmlelement("textarea")}} 及 {{htmlelement("input")}} 元素不起作用。 {{domxref("HTMLInputElement.setSelectionRange()")}} 或 <code>selectionStart</code> 及 <code>selectionEnd</code> 属性可用于解决此问题。</p>
 
-<p>还要注意选择不同于焦点（详见 <a href="https://wiki.developer.mozilla.org/zh-CN/docs/Web/API/Selection#Selection_%E5%8F%8A%E8%BE%93%E5%85%A5%E7%84%A6%E7%82%B9">Selection 及输入焦点</a>）。可使用{{domxref("Document.activeElement")}} 来返回当前的焦点元素.</p>
+<p>还要注意选择不同于焦点（详见 <a href="/zh-CN/docs/Web/API/Selection#Selection_%E5%8F%8A%E8%BE%93%E5%85%A5%E7%84%A6%E7%82%B9">Selection 及输入焦点</a>）。可使用{{domxref("Document.activeElement")}} 来返回当前的焦点元素.</p>
 
 <h2 id="浏览器兼容性">浏览器兼容性</h2>
-
-<div class="hidden">此页上的兼容性表是从结构化数据生成的。如果您想贡献数据，请访问 <a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data</a> 并向我们发送一个请求。</div>
 
 <p>{{Compat("api.Window.getSelection")}}</p>
 

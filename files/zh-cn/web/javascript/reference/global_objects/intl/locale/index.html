@@ -64,13 +64,13 @@ translation_of: Web/JavaScript/Reference/Global_Objects/Intl/Locale
 
 <p>很简单，就是需要给{{jsxref("Locale/Locale", "Intl.Locale")}} 构造函数传入一个 locale 标识字符串作为参数：</p>
 
-<pre class="brush: js notranslate">let us = new Intl.Locale('zh-Hans-CN');</pre>
+<pre class="brush: js">let us = new Intl.Locale('zh-Hans-CN');</pre>
 
 <h3 id="使用配置实例化">使用配置实例化</h3>
 
 <p>构造函数支持传入 object 作为配置，object 中可包含多个配置属性。例如，设置 <code><a href="/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle">hourCycle</a></code> 属性，用于设置您所需要的小时周期类型：</p>
 
-<pre class="brush: js notranslate">let zh12hour = new Intl.Locale("zh-Hans-CN", {hourCycle: "h12"});
+<pre class="brush: js">let zh12hour = new Intl.Locale("zh-Hans-CN", {hourCycle: "h12"});
 console.log(zh12hour.hourCycle); // Prints "h12"</pre>
 
 <h2 id="规范">规范</h2>
@@ -93,8 +93,6 @@ console.log(zh12hour.hourCycle); // Prints "h12"</pre>
 <h2 id="浏览器兼容性">浏览器兼容性</h2>
 
 <div>
-<div class="hidden">本页面兼容性表的数据由结构化数据生成。如果你想提供数据，请转到<a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data</a>并且向我们发推送（pull）请求。</div>
-
 <p>{{Compat("javascript.builtins.Intl.Locale")}}</p>
 </div>
 
